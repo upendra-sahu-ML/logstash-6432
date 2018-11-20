@@ -17,7 +17,7 @@ image:
   #    - name: "myKubernetesSecret"
 
 service:
-  type: nodePort
+  type: NodePort
   # clusterIP: None
   # nodePort:
   # Set this to local, to preserve client source ip.  Default stripes out the source ip
