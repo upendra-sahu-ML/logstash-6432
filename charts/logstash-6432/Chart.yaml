@@ -15,4 +15,4 @@ orig_name: logstash
 sources:
 - https://www.docker.elastic.co
 - https://www.elastic.co/guide/en/logstash/current/index.html
-version: 1.3.0
+version: 0.0.1
