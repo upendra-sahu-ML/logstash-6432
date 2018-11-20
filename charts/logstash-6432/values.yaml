@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 2
 
 podDisruptionBudget:
   maxUnavailable: 1
@@ -17,7 +17,7 @@ image:
   #    - name: "myKubernetesSecret"
 
 service:
-  type: ClusterIP
+  type: nodePort
   # clusterIP: None
   # nodePort:
   # Set this to local, to preserve client source ip.  Default stripes out the source ip
