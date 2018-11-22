@@ -10,7 +10,7 @@ pipeline {
     stages {
       stage('Build Release') {
         when {
-          branch 'master'
+          branch 'devel'
         }
         steps {
           container('jx-base') {
@@ -31,7 +31,7 @@ pipeline {
       }
       stage('Promote to Environments') {
         when {
-          branch 'master'
+          branch 'devel'
         }
         steps {
           dir ('./charts/logstash-6432') {
